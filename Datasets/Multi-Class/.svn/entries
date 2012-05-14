@@ -1,63 +1,0 @@
-10
-
-dir
-432
-svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets/Multi-Class
-svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot
-
-
-
-2008-02-05T00:10:23.764580Z
-373
-colemant
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8581d66d-da33-0410-a32b-e217cc5efb88
-
-Letter Recognition
-dir
-
-Wine
-dir
-
-Iris
-dir
-
-Dermatology
-dir
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets/Dermatology
-367
-
-Shuttle
-dir
-
