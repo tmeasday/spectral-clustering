@@ -1,0 +1,37 @@
+10
+
+dir
+432
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets/Pima-Indians-Diabetes
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot
+
+
+
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+pima-indians-diabetes.names.txt
+file
+
+
+
+
+2008-02-04T04:41:23.000000Z
+c992c8ac923ff37ad3b3aa31e52befb4
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+pima-indians-diabetes.data.txt
+file
+
+
+
+
+2008-02-04T04:41:18.000000Z
+cfa2f3a14e4199be0b1e0653db9574d3
+2008-02-04T14:47:47.221915Z
+367
+colemant
+

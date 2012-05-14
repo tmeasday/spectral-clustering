@@ -1,0 +1,37 @@
+10
+
+dir
+432
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets/Spambase
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot
+
+
+
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+spambase.data.txt
+file
+
+
+
+
+2008-02-04T05:25:23.000000Z
+e7368d48fa690b0331a09b430d55fb6a
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+spambase.names.txt
+file
+
+
+
+
+2008-02-04T05:25:14.000000Z
+4f4a688ed988164deb0b7c77a7135bfc
+2008-02-04T14:47:47.221915Z
+367
+colemant
+

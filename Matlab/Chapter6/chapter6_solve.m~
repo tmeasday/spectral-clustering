@@ -1,0 +1,22 @@
+function [X, cost] = chapter6_solve (SDP, delta)
+
+% SDP is as follows:
+% SDP.R is the trace of X
+% SDP.C is the cost matrix (n * n)
+% SDP.Aeasy is a m_L * n * n array of matrices
+% SDP.Beasy is m_L-length vector
+% SDP.rho is m_L-length vector
+% SDP.Ahard is a m_H * n * n array of matrices
+% SDP.Bhard is a m_H length vector
+% SDP.alphamin
+% SDP.alphamax
+
+% think about this later
+epsilon = 1/2;
+
+alphamin = SDP.alphamin;
+alphamax = SDP.alphamax;
+
+while (alphamax - alphamin > delta)
+    
+end

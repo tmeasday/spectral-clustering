@@ -1,0 +1,37 @@
+10
+
+dir
+432
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets/Trains
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot
+
+
+
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+trains.names.txt
+file
+
+
+
+
+2008-02-04T05:42:13.000000Z
+ee5b4d88569b3d7a6005a8e977a4f945
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+trains-transformed.data.txt
+file
+
+
+
+
+2008-02-04T05:42:31.000000Z
+35b70cfef4040107fe8d613b6ad9a766
+2008-02-04T14:47:47.221915Z
+367
+colemant
+

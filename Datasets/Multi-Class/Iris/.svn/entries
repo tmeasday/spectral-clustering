@@ -1,0 +1,37 @@
+10
+
+dir
+432
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets/Multi-Class/Iris
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot
+
+
+
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+iris.names.txt
+file
+
+
+
+
+2008-02-04T04:21:48.000000Z
+1759b220ad1e305d573a7dbbdb9c7039
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+iris.data.txt
+file
+
+
+
+
+2008-02-04T04:21:41.000000Z
+42615765a885ddf54427f12c34a0a070
+2008-02-04T14:47:47.221915Z
+367
+colemant
+

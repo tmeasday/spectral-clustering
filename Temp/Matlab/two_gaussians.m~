@@ -1,0 +1,6 @@
+function pts = two_gaussians(pt1, sigma1, pt2, sigma2, n)
+
+k
+pts = zeros(n,k);
+for i=1:n
+    

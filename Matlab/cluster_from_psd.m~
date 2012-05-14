@@ -1,0 +1,22 @@
+function [y] = cluster_from_psd (Gamma, cost_func)
+
+% Takes Gamma(psd) with 1s on the diagonal and smaller absolute values
+% elsewhere, and returns clustering based on repeated randomized
+% projection. cost_func is used to choose the best randomized projection.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NUMBER OF RANDOMIZED PROJECTIONS TO TAKE
+ITER = 100;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[U, S, V] = svd (Gamma);
+
+Y = U * sqrt(S);
+
+% then cluster the transformed points
+y = kmeans (Y, 2);
+% lets get into coordinates we like
+y = y*2 - 3;
+
+
+%y = repeated_rand_proj (Y', cost_func, ITER);

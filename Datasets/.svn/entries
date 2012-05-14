@@ -1,0 +1,121 @@
+10
+
+dir
+432
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot
+
+
+
+2008-02-06T11:23:26.548040Z
+407
+jamess
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8581d66d-da33-0410-a32b-e217cc5efb88
+
+Congressional Voting Records
+dir
+
+Magic
+dir
+
+SPECTF
+dir
+
+KDD99
+dir
+
+check_consistency.py
+file
+
+
+
+
+2008-02-05T00:36:55.000000Z
+4e85d9cc21baea24cba4555053532f5e
+2008-02-05T00:37:44.491089Z
+380
+colemant
+has-props
+
+Pima-Indians-Diabetes
+dir
+
+Wisconsin Breast Cancer
+dir
+
+Hepatitis
+dir
+
+Census Income
+dir
+
+Spambase
+dir
+
+Multi-Class
+dir
+
+Trains
+dir
+
+Soybean
+dir
+
+Heart Disease
+dir
+
+Internet Advertisments
+dir
+
+prepare_lbls.py
+file
+
+
+
+
+2008-02-05T12:43:37.000000Z
+9795c29a37dfb36a1d743bff42b92bd8
+2008-02-05T22:53:55.132812Z
+392
+colemant
+has-props
+
+Australian
+dir
+
+Echocardiogram
+dir
+
+Ionosphere
+dir
+
+prepare_pts.py
+file
+
+
+
+
+2008-02-05T00:49:35.000000Z
+53cf7299260665345f9353c2e29b89f0
+2008-02-05T22:53:55.132812Z
+392
+colemant
+has-props
+
+Haberman
+dir
+

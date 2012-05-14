@@ -1,0 +1,32 @@
+function R = corr_clustering_complete(Advice)
+
+n = size(Advice,1);
+
+[MB, partition] = to_block_form(Advice);
+
+Advice = Advice + Advice' + eye(n);
+cost = zeros(1,n);
+
+for i=1:n
+    v = Advice(:,i);
+    cost(i) = v' * MB * v;
+end
+
+[min_cost, idx] = min(cost);
+
+R = full(Advice(:,idx(1)));
+
+% ok this R is not good enough... we need to improve it by local search
+curr_cost = min_cost;
+while (true)
+    min = curr_cost;
+    min_idx = 0;
+    for i = i:n
+        R(i) = R(i) * -1;
+        cost = R' * MB * R;
+        
+        if (cost - min) < EPS
+            
+        R(i) = R(i) * -1;
+    end
+end

@@ -1,0 +1,40 @@
+function X = chapter6_feasible (SDP, delta, alpha)
+
+% think about this later
+epsilon = 1/2;
+
+MAX_ITS = 1000;
+
+m_L = length(SDP.beasy + 1);
+m_H = length (SDP.bhard + 2);
+[n,n] = size (SDP.C);
+
+A = [SDP.Aeasy(:,:); SDP.C(:)'];
+b = [SDP.beasy, alpha];
+
+w = ones (m_L, 1);
+   
+I = eye(n);
+Ahard = [SDP.Ahard(:,:); I(:); zeros (1, n^2)];
+bhard = [SDP.bhard; SDP.R; 0];
+
+Xbar = zeros (n);
+
+for it=1:MAX_ITS
+    p = w / sum (w);
+    
+    Ahard(m_H,:) = p' * A;
+    bhard(m_H) = p' * b;
+    
+    X = chapter6_oracle (Ahard, bhard);
+    
+    if isempty (X)
+        return;
+    end
+    
+    Xbar
+    
+    m = A * X - b / SDP.rho;
+    
+    w = w * (1 + (2*(m < 0)-1) * epsilon).^((2*(m > 0)-1) .* m);
+end

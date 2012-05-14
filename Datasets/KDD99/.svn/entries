@@ -1,0 +1,38 @@
+10
+
+dir
+432
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot/Code/Clustering/Datasets/KDD99
+svn+ssh://charikar/home/charikar/pgrad/colemant/svnroot
+
+
+
+2008-02-04T14:47:47.221915Z
+367
+colemant
+
+kddcup.data_10_percent.gz
+file
+
+
+
+
+2007-06-26T19:59:29.000000Z
+c421989ff187d340c1265ac3080a3229
+2008-02-04T14:47:47.221915Z
+367
+colemant
+has-props
+
+kddcup.names.txt
+file
+
+
+
+
+2008-02-04T04:23:30.000000Z
+19e3ed2afd7b83e2268599816e973c63
+2008-02-04T14:47:47.221915Z
+367
+colemant
+

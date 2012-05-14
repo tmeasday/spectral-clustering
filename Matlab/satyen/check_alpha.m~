@@ -1,0 +1,80 @@
+function [X, ystar, cost] = check_alpha (alpha, SDP, epsilon, delta)
+
+MAX_ITS=100;
+
+[k,n,n] = size (SDP.A);
+X = eye(n) * SDP.b(1);
+
+ybar = zeros (k,1);
+
+sumM = zeros (n);
+    
+for it=1:MAX_ITS
+    
+    [y,c] = oracle (SDP, alpha, X);
+ 
+    % check this
+    % if the best y has larger S.X than C.X then X scaled to be feasible
+    % will have cost less than alpha
+    if (c > C.X)
+        % how much do we need to scale X?
+   
+        % there's probably some special way to do this
+        scale = 1;
+        for i = 1:k
+            fit = SDP.b(i) / SDP.A(i,:)' * X(:);
+            
+            if (fit > scale)
+                scale = fit;
+            end
+        end
+        X = X * scale;
+        cost = X(:)' * SDP.C(:);
+        return;
+    end
+   
+    
+    % else work out what ystar is going to be
+    ybar = (ybar * (it-1) + y) / it;
+    
+    % we need to know what S's largest eigenvalue is
+    S = -1 * SDP.C;
+    % again, probably a better way to do this
+    for i = 1:k
+        S = S + y(i) * SDP.A(i);
+    end
+    largest = eigs (S, 1, 'LM');
+    smallest = eigs (S, 1, 'SM');
+    
+    ystar = ybar;
+    if largest > 0
+        ystar(1) = ystar(1) - largest;
+    end
+    
+    % now.. does it have sufficient cost
+    cost = SDP.b' * ystar; 
+    if cost > (1 - delta) * alpha
+        return;
+    end
+    
+    % ok.. no X, or y... so call mmw again.
+    % M is curly S
+    if abs(largest) > abs (smallest)
+        if smallest < 0
+            M = (S - smallest * eye(n)) / (largest - smallest);
+        else
+            M = S / largest;
+        end
+    else
+        if largest > 0
+            M = (S - largest * eye(n)) / (largest - smallest);
+        else
+        end
+    end
+    
+    
+    
+    
+end
+
+% error?
